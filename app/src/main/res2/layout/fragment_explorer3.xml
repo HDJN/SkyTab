@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0dip" android:textColor="@color/clr_4a4a4a" android:gravity="center" android:background="@drawable/border_bottm" android:layout_width="fill_parent" android:layout_height="@dimen/fake_actionbar_height" android:text="福利社" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swiperefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

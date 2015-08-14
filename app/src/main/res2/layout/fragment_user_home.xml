@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swiperefresh0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/imageview_empty_show" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/timeline_default" android:scaleType="fitCenter" />
+    <RelativeLayout android:layout_gravity="top" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/fake_actionbar_height">
+        <View android:id="@id/action_bg" android:background="@drawable/border_bottm" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/iv_search" android:padding="3.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/btn_search_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_back" android:padding="2.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/action_back_white" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/action_title_size" android:textColor="@android:color/white" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未登录" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_setting" android:padding="3.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/btn_setting_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_message" android:padding="5.0dip" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/message" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.doouya.mua.view.CommentBar android:layout_gravity="bottom" android:id="@id/comment_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

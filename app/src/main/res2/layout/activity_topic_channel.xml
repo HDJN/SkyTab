@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.doouya.mua.view.LoadmoreListView android:scrollbarStyle="outsideOverlay" android:id="@id/lv_channel_topic" android:background="@color/main_bg" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:dividerHeight="8.0dip" />
+            <ImageView android:id="@id/iv_load_fail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/include_commend" />
+</RelativeLayout>

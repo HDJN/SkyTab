@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_line" android:background="#ffc9c7c3" android:layout_width="2.0dip" android:layout_height="15.0dip" android:layout_marginLeft="25.0dip" />
+    <ImageView android:id="@id/img_icon" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/circle_shape" android:layout_below="@id/top_line" android:layout_alignParentLeft="true" />
+    <TextView android:textColor="@color/gray" android:id="@id/mybaby_list_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="12.0dip" android:text="时间" />
+    <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/mybaby_list_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="年龄" android:layout_alignTop="@id/mybaby_list_time" android:layout_alignParentRight="true" />
+    <TextView android:textStyle="bold" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/tv_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="·" android:layout_toLeftOf="@id/mybaby_list_age" android:layout_alignTop="@id/mybaby_list_age" android:layout_alignBottom="@id/mybaby_list_age" />
+    <TextView android:textColor="@color/gray" android:gravity="center" android:id="@id/mybaby_list_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名字" android:layout_toLeftOf="@id/tv_point" android:layout_alignTop="@id/mybaby_list_age" />
+    <ImageView android:id="@id/mybaby_baby_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/icon_boy" android:layout_toLeftOf="@id/mybaby_list_name" android:layout_alignBottom="@id/mybaby_list_time" />
+    <com.doouya.mua.view.ShowCard android:id="@id/mybaby_show" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginRight="13.0dip" android:layout_below="@id/mybaby_list_time" />
+    <View android:background="#ffdadada" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/mybaby_show" />
+    <View android:id="@id/bottom_line" android:background="#ffc9c7c3" android:layout_width="2.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_below="@id/img_icon" android:layout_alignBottom="@id/mybaby_show" />
+</RelativeLayout>

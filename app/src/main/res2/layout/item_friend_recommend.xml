@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.doouya.mua.view.HeadImageView android:id="@id/cv_user_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="16.0dip" android:layout_centerVertical="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/cv_user_icon" android:layout_centerInParent="true">
+        <TextView android:textColor="@android:color/black" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="佳佳" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/tv_category_recommend" android:id="@id/tv_user_category" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搭配达人" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_isfollowed" android:background="@color/tag_tv" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="20.0dip" android:text="＋关注" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/divide_recomment" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rl_activity_login" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <TextView android:textSize="22.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="mua大家庭欢迎你" android:layout_centerInParent="true" />
+        <ImageView android:clickable="true" android:layout_width="?android:actionBarSize" android:layout_height="20.0dip" android:src="@drawable/login_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="cancel" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/login_bg" android:scaleType="centerInside" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="loginWeixin">
+            <ImageView android:id="@id/iv_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_btn_weixin" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/text_dark" android:id="@id/tv_login_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信登录" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:onClick="loginWeibo">
+            <ImageView android:id="@id/iv_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sel_btn_weibo" android:layout_weight="1.0" />
+            <TextView android:textColor="@color/text_dark" android:id="@id/tv_login_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sina_login" android:layout_toRightOf="@id/iv_sina" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/text_dark" android:id="@id/nameless" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="邀请码" android:onClick="inputCode" />
+        <TextView android:textColor="@color/text_dark" android:id="@id/tv_invite_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </LinearLayout>
+</LinearLayout>

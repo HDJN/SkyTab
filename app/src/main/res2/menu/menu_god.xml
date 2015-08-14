@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_set_as" android:id="@id/action_god" android:orderInCategory="100" android:title="切换达人" android:showAsAction="always|withText" />
+</menu>

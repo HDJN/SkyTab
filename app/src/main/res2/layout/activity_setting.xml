@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_message" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/nameless" android:background="@android:color/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:onClick="viewMengDesc">
+        <TextView android:textSize="16.0sp" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="mua星球萌值说明" android:layout_alignParentLeft="true" />
+        <ImageView android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cell_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/nameless">
+        <RelativeLayout android:id="@id/bn_share" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="邀请好友得萌值" android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="16.0sp" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="亲，求鼓励" android:onClick="viewMarket" />
+        <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="16.0sp" android:id="@id/bn_report" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/report" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/app_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffbab5ae" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_number" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffbab5ae" android:id="@id/app_version_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/bn_quit_or_login" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/quit_login" android:layout_above="@id/app_version" />
+</RelativeLayout>

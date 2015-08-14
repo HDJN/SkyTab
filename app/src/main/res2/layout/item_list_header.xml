@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_head_channel" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.doouya.mua.view.AutoScrollViewPager android:id="@id/asvp_head" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/title" />
+    <com.viewpagerindicator.CirclePageIndicator android:id="@id/indicator" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/iv_title" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.doouya.mua.view.SVGSingleFingerView android:id="@id/singlefingerview" android:layout_width="fill_parent" android:layout_height="fill_parent" pushtouch:image="@drawable/ic_launcher" pushtouch:image_width="200.0dip" pushtouch:image_height="150.0dip" pushtouch:push_image="@drawable/btn_resize" pushtouch:del_image="@drawable/btn_resize_delete" pushtouch:push_image_width="20.0dip" pushtouch:push_image_height="20.0dip" pushtouch:centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pushtouch="http://schemas.android.com/apk/res-auto" />

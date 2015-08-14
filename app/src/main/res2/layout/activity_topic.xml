@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/topic_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_topic" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/contentDescription" />
+            <TextView android:textColor="@color/text_note" android:id="@id/tv_note" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ListView android:id="@id/lv_topic_comment" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="50.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/include_commend" />
+    <View android:background="@color/topic_bottom_div" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@id/ll_bottom" />
+</RelativeLayout>

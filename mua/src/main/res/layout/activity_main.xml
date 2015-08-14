@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layout_main_nav"
+        android:layout_width="match_parent"
+        android:layout_height="48.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1.0px"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <com.doouya.mua.view.DrawableButton
+            android:id="@+id/btn_nav_channel"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="8.0dip"
+            app:drawable_padding="5.0dip"
+            app:drawable_top="@drawable/sel_tab_home"
+            app:text="首页"
+            app:textColor="@color/nav_bar_selector"
+            app:textSize="10.0sp" />
+
+        <com.doouya.mua.view.DrawableButton
+            android:id="@+id/btn_nav_discover"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="8.0dip"
+            app:drawable_padding="5.0dip"
+            app:drawable_top="@drawable/sel_tab_exp"
+            app:text="心得"
+            app:textColor="@color/nav_bar_selector"
+            app:textSize="10.0sp" />
+
+        <ImageView
+            android:id="@+id/btn_nav_shot"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/main_color"
+            android:padding="10.0dip"
+            android:src="@drawable/icon_camero" />
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <com.doouya.mua.view.DrawableButton
+                android:id="@+id/btn_nav_notice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:paddingBottom="3.0dip"
+                android:paddingTop="8.0dip"
+                app:drawable_padding="5.0dip"
+                app:drawable_top="@drawable/sel_tab_notice"
+                app:text="消息"
+                app:textColor="@color/nav_bar_selector"
+                app:textSize="10.0sp" />
+
+            <com.doouya.mua.view.DotView
+                android:id="@+id/view_notice_indicate"
+                android:layout_width="8.0dip"
+                android:layout_height="8.0dip"
+                android:layout_alignTop="@id/btn_nav_notice"
+                android:layout_centerHorizontal="true"
+                android:translationX="10.0dip" />
+        </RelativeLayout>
+
+        <com.doouya.mua.view.DrawableButton
+            android:id="@+id/btn_nav_baby"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="3.0dip"
+            android:paddingTop="8.0dip"
+            app:drawable_padding="5.0dip"
+            app:drawable_top="@drawable/sel_tab_baby"
+            app:text="宝贝"
+            app:textColor="@color/nav_bar_selector"
+            app:textSize="10.0sp" />
+    </LinearLayout>
+
+    <io.codetail.widget.RevealFrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_main_nav">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"/>
+
+    </io.codetail.widget.RevealFrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.0px"
+        android:layout_below="@id/root"
+        android:background="@color/gray" />
+
+</RelativeLayout>

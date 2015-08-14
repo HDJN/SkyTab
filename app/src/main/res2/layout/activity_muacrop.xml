@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/multi_top" layout="@layout/activity_multi_top" />
+    <RelativeLayout android:id="@id/cropact_show_parent" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/multi_top">
+        <ImageView android:id="@id/cropact_show_img0" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/cropact_show_img1" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/cropact_show_img2" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/cropact_show_img3" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/cropact_show_img4" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/cropact_show_img5" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/cropact_show_img6" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/cropact_show_img7" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+        <ImageView android:id="@id/cropact_show_img8" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:scaleType="centerInside" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:layout_below="@id/cropact_show_parent" android:layout_centerHorizontal="true" android:animateLayoutChanges="true">
+        <TextView android:gravity="center" android:id="@id/cropact_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="96.0dip" android:text="@string/square_size" android:drawableTop="@drawable/btn_size0" android:drawablePadding="4.0dip" android:layout_below="@id/cropact_size" />
+        <RelativeLayout android:id="@id/cropact_rotation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/cropact_size">
+            <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rotation90" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/cropact_rotation_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_rotation" />
+        </RelativeLayout>
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:text="@string/rotate" android:layout_toRightOf="@id/cropact_size" android:layout_below="@id/cropact_rotation" />
+    </RelativeLayout>
+</RelativeLayout>

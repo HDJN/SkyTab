@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.doouya.mua.view.HeadImageView android:id="@id/cv_user_icon" android:layout_width="56.0dip" android:layout_height="56.0dip" app:roundAsCircle="true" app:roundingBorderWidth="2.0dip" app:roundingBorderColor="@android:color/white" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        <TextView android:textColor="@android:color/white" android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="1111" />
+    </LinearLayout>
+    <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/choose_your_interest" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

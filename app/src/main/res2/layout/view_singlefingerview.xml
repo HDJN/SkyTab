@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.doouya.mua.view.SingleFingerView android:layout_width="fill_parent" android:layout_height="fill_parent" app:image_width="200.0dip" app:image_height="150.0dip" app:push_image="@drawable/btn_resize" app:del_image="@drawable/btn_resize_delete" app:push_image_width="30.0dip" app:push_image_height="30.0dip" app:centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

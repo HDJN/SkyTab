@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffebe6df" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/srl_tag" android:background="#ffebe6df" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0px">
+        <com.doouya.mua.view.GridViewWithHeaderAndFooter android:scrollbarStyle="outsideOverlay" android:id="@id/gv_tag" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="@dimen/toolbar_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:numColumns="2" android:isScrollContainer="false" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/tv_join_tag" android:background="@drawable/bg_float_button" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/toolbar_height" android:layout_marginBottom="20.0dip" android:text=" 我也来晒" android:drawableLeft="@drawable/icon_camera_small" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

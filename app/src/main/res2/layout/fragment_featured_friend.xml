@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.doouya.mua.view.ViewPagerIndicator android:id="@id/indicator" android:background="@color/main_color" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/fake_actionbar_height" app:line_padding="25.0dip" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_featured_friend" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

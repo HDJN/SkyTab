@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_white_solid" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/text_dark" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="兑换码" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/main_color" android:gravity="center" android:id="@id/textview_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:textIsSelectable="true" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/btn_ok" android:background="@drawable/bg_red_solid" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="知道了" />
+</LinearLayout>

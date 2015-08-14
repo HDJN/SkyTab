@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/edit_image_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_editpic_top" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0dip" android:id="@id/edit_top_previous" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/previous" />
+        <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/btn_issue" android:background="@drawable/bg_main_solid" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:text="@string/issue" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/ScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:layout_below="@id/rl_editpic_top">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_below="@id/rl_editpic_top">
+            <RelativeLayout android:id="@id/edit_pic_rl" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/edit_pic_rl0" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl1" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl2" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl3" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl4" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl5" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl6" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl7" layout="@layout/edit_item_show_pic" />
+                <include android:id="@id/edit_pic_rl8" layout="@layout/edit_item_show_pic" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/edit_photos" android:background="@android:color/white" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="70.0dip" android:layout_below="@id/edit_pic_rl" />
+            <EditText android:id="@id/edit_show_note0" android:visibility="visible" android:layout_below="@id/edit_photos" style="@style/EditImageNoteEditTextStyle" />
+            <ListView android:id="@id/lv_my_baby" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_below="@id/rl_image" />
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/tv_add_baby" android:paddingBottom="@dimen/dp16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp16" android:text="@string/add_baby" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+            <RelativeLayout android:gravity="center" android:background="@android:color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_to" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/editact_share_friends" android:tag="true" android:background="@drawable/btn_sharefriends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/editact_share_chat" android:tag="true" android:background="@drawable/btn_sharewechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_toLeftOf="@id/editact_share_friends" />
+                <ImageView android:id="@id/editact_share_sina" android:tag="true" android:background="@drawable/btn_sharesina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24.0dip" android:layout_toLeftOf="@id/editact_share_chat" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

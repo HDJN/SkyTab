@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffe9e6e1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/srl" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+        <ListView android:id="@id/lv_chat" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/bg_chat_item" android:divider="@null" android:layout_alignParentTop="true" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <include layout="@layout/include_commend" />
+</RelativeLayout>

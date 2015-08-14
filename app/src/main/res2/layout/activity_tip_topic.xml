@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/nameless" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/black_translucent" android:layout_width="fill_parent" android:layout_height="@dimen/fake_actionbar_height" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="20.0dip">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:background="@color/black_translucent" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <View android:background="@drawable/black_corner" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:background="@color/black_translucent" android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <View android:background="@color/black_translucent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    </LinearLayout>
+    <RelativeLayout android:background="@color/black_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tips_topic" />
+    </RelativeLayout>
+</LinearLayout>

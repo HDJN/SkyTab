@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="img_filter_name">
+        <item>原图</item>
+        <item>阳光</item>
+        <item>柔软</item>
+        <item>胶片</item>
+        <item>光晕</item>
+    </string-array>
+</resources>

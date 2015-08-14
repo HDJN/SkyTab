@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout android:id="@id/srl_stared" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/bg_chat" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <com.doouya.mua.view.LoadmoreListView android:id="@id/lv_stared" android:background="@color/bg_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0px" android:divider="@null" android:dividerHeight="0.0dip" />
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

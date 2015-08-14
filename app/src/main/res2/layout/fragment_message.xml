@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="22.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/frag_title" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="12.0dip" android:text="@string/msg" />
+        <RelativeLayout android:id="@id/rl_message_mua" style="@style/MessageActivityHeadLinearLayoutStyle">
+            <ImageView android:id="@id/iv_message_mua" android:src="@drawable/icon_message_muaed" style="@style/MessageActivityHeadImageStyle" />
+            <TextView android:text="被亲" android:layout_toRightOf="@id/iv_message_mua" style="@style/MessageActivityHeadTextStyle" />
+            <TextView android:id="@id/tv_mua_number" android:visibility="gone" style="@style/MessageActivityHeadNumberStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_message_comment" style="@style/MessageActivityHeadLinearLayoutStyle">
+            <ImageView android:id="@id/iv_message_comment" android:src="@drawable/icon_message_comment" style="@style/MessageActivityHeadImageStyle" />
+            <TextView android:text="@string/show_commend" android:layout_toRightOf="@id/iv_message_comment" style="@style/MessageActivityHeadTextStyle" />
+            <TextView android:id="@id/tv_comment_number" android:visibility="gone" style="@style/MessageActivityHeadNumberStyle" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_message_notice" style="@style/MessageActivityHeadLinearLayoutStyle">
+            <ImageView android:id="@id/iv_message_notice" android:src="@drawable/icon_message_notice" style="@style/MessageActivityHeadImageStyle" />
+            <TextView android:text="@string/notice" android:layout_toRightOf="@id/iv_message_notice" style="@style/MessageActivityHeadTextStyle" />
+            <TextView android:id="@id/tv_notice_number" android:visibility="gone" style="@style/MessageActivityHeadNumberStyle" />
+        </RelativeLayout>
+        <ListView android:id="@id/lv_chat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/space_in_show" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.doouya.mua.view.HeadImageView android:id="@id/image_head" android:layout_width="@dimen/head_show" android:layout_height="@dimen/head_show" android:layout_marginRight="@dimen/space_in_show" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/nameless" android:layout_width="wrap_content" android:layout_height="@dimen/head_show" android:layout_marginBottom="@dimen/space_in_show" android:layout_toRightOf="@id/image_head">
+        <TextView android:textSize="@dimen/sp14" android:id="@id/tv_show_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp4" android:text="" android:layout_toRightOf="@id/iv_show_user_icon" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_color" android:id="@id/tv_show_baby_and_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp4" android:text=" " android:layout_toRightOf="@id/iv_show_user_icon" android:layout_below="@id/tv_show_user_name" />
+    </LinearLayout>
+    <TextView android:textColor="@color/text_red" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="@dimen/head_show" android:text="+关注" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.doouya.mua.view.show.SplitImageLayout android:id="@id/show_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/image_head" android:layout_below="@id/nameless" android:layout_alignParentRight="true" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="@dimen/head_show" android:layout_toRightOf="@id/image_head" android:layout_below="@id/show_layout" android:layout_alignParentRight="true">
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_comment" app:text="分享" app:drawable_left="@drawable/chat" app:align="left" style="@style/ShowDrawableButton" />
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_share" app:text="分享" app:drawable_left="@drawable/btn_share" style="@style/ShowDrawableButton" />
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_mua" app:text="赞" app:drawable_left="@drawable/show_checkbox_mua" app:align="right" style="@style/ShowDrawableButton" />
+    </LinearLayout>
+</RelativeLayout>

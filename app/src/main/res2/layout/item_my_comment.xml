@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/border_bottm" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.doouya.mua.view.HeadImageView android:id="@id/civ_avatar" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+    <com.doouya.mua.view.ShowImageView android:id="@id/iv_show" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_dark" android:id="@id/tv_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="11111111" android:layout_toRightOf="@id/civ_avatar" android:layout_toEndOf="@id/civ_avatar" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_light" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="11111111" android:layout_toLeftOf="@id/iv_show" android:layout_alignBaseline="@id/tv_message_title" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/text_light" android:id="@id/tv_message_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="11111111" android:layout_toLeftOf="@id/iv_show" android:layout_below="@id/tv_message_title" android:layout_alignLeft="@id/tv_message_title" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="#ff000000" android:endColor="#00000000" android:type="radial" android:gradientRadius="10.0" />
+    <padding android:left="@dimen/floating_action_button_shadow_radius" android:top="@dimen/dp4" android:right="@dimen/floating_action_button_shadow_radius" android:bottom="@dimen/floating_action_button_shadow_radius" />
+</shape>

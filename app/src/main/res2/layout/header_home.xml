@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_blur" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@color/black_translucent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="2.0" />
+        <FrameLayout android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <com.doouya.mua.view.HeadImageView android:layout_gravity="center" android:id="@id/image_head" android:layout_width="60.0dip" android:layout_height="60.0dip" app:placeholderImage="@drawable/no_login_img" app:placeholderImageScaleType="centerInside" app:roundAsCircle="true" app:roundingBorderWidth="2.0dip" app:roundingBorderColor="@android:color/white" />
+        </FrameLayout>
+        <TextView android:textColor="@color/main_color" android:id="@id/btn_flow" android:background="@drawable/bg_home_btnflow" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="+关注" />
+        <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="-20.0dip" style="?android:attr/progressBarStyleSmall" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_valuebar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textview_photos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0\n照片" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textview_friends" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0\n粉丝" android:lines="2" android:layout_weight="1.0" />
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/textview_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0\n萌值" android:lines="2" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

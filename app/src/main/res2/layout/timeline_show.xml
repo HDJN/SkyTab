@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_timeline" android:paddingLeft="@dimen/layout_padding" android:paddingRight="@dimen/layout_padding" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/nameless" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="26.0dip">
+        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/circle_shape" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0sp" android:textColor="@color/text_light" android:id="@id/textview_day" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="31" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_light" android:id="@id/textview_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="七月" />
+        <View android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_light" android:id="@id/textview_baby" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="张小鸭 9岁" android:singleLine="true" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/show_layout_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.doouya.mua.view.show.TimeLineImageLayout android:id="@id/show_layout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/btn_diary" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/btn_diary" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        <ImageView android:id="@id/iv_anim_mua" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mua" android:layout_centerInParent="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/iv_anim_mua_love" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mua_love" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/textview_desc" android:background="@drawable/bg_note" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/nameless2" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/split_nine_space" />
+    <com.doouya.mua.view.show.CommentPreview android:id="@id/comment_preview" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:id="@id/layout_operate" android:background="@android:color/white" android:padding="@dimen/space_in_show" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_comment" android:alpha="0.7" app:text="评论" app:drawable_left="@drawable/btn_chat" app:align="left" style="@style/ShowDrawableButton" />
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_share" android:alpha="0.7" app:text="分享" app:drawable_left="@drawable/btn_share" style="@style/ShowDrawableButton" />
+        <com.doouya.mua.view.DrawableButton android:id="@id/btn_show_mua" android:alpha="0.7" app:text="赞" app:drawable_left="@drawable/sel_btn_star" app:align="right" style="@style/ShowDrawableButton" />
+    </LinearLayout>
+</LinearLayout>

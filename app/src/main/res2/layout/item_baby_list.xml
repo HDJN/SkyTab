@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_baby_list_item" android:paddingLeft="16.0dip" android:paddingTop="@dimen/dp8" android:paddingRight="16.0dip" android:paddingBottom="@dimen/dp8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_baby_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/dp16" android:id="@id/tv_baby_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="佳佳" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_baby_name">
+            <TextView android:textSize="@dimen/dp12" android:textColor="@android:color/tertiary_text_light" android:id="@id/tv_baby_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="男孩" />
+            <TextView android:textSize="@dimen/dp12" android:textColor="@android:color/tertiary_text_light" android:id="@id/tv_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="·" />
+            <TextView android:textSize="@dimen/dp12" android:textColor="@android:color/tertiary_text_light" android:id="@id/tv_baby_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2岁2个月" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/tv_selected" android:background="@drawable/baby_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_user_detail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_user_home" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.doouya.mua.view.ProgressBarCircularIndeterminate android:id="@id/progressBar" android:background="@color/main_color" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

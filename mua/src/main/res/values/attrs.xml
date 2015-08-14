@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DrawableButton">
+        <attr name="text" format="string" />
+        <attr name="drawable_padding" format="dimension" />
+        <attr name="drawable_top" format="reference" />
+        <attr name="textColor" format="reference"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+
+
+</resources>

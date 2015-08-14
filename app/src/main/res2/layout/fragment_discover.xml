@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="22.0dip" android:textColor="@color/clr_4a4a4a" android:gravity="center" android:id="@id/frag_title" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="1.0px" android:text="发现" />
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/swipe_container" />
+    <com.doouya.mua.view.SuperSwipeRefreshLayout android:id="@id/swipe_container" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/frag_title">
+        <com.doouya.mua.view.SuperScrollView android:id="@id/ScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/more_goodsset" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="编辑精选" />
+                    <TextView android:textColor="@color/gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多" android:drawableRight="@drawable/cell_arrow" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_goodsset" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:overScrollMode="always" />
+                <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="同龄好物" />
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_goodsage" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="147.0dip" />
+                <RelativeLayout android:id="@id/more_user" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="13.0sp" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="超级妈妈" />
+                    <TextView android:textColor="@color/gray" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="更多" android:drawableRight="@drawable/cell_arrow" android:drawablePadding="5.0dip" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_topuser" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+            </LinearLayout>
+        </com.doouya.mua.view.SuperScrollView>
+    </com.doouya.mua.view.SuperSwipeRefreshLayout>
+</RelativeLayout>

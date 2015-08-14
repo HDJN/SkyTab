@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycleView_goodsset" android:paddingBottom="50.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/fixed_header" android:background="#ffffffff" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <View android:id="@id/statusbar_holder" android:layout_width="1.0px" android:layout_height="0.0px" android:layout_alignParentTop="true" />
+        <TextView android:textSize="18.0sp" android:id="@id/tv_activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="五一出游必备单品" android:layout_below="@id/statusbar_holder" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray" android:id="@id/tv_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="34个物品" android:layout_below="@id/tv_activity_title" android:layout_centerHorizontal="true" />
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tv_sub_title" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_back" android:background="@drawable/bg_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/action_back_white" android:layout_alignBottom="@id/fixed_header" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/iv_share" android:background="@drawable/bg_circle" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/action_share_white" android:layout_alignBottom="@id/fixed_header" android:layout_alignParentRight="true" />
+</RelativeLayout>
