@@ -62,6 +62,15 @@ public class MainActivity extends FragmentActivity {
     }
 
     private void setSelect(int i) {
+
+
+
+
+
+
+
+
+
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         hideFragment(transaction);
@@ -104,12 +113,6 @@ public class MainActivity extends FragmentActivity {
         }
         transaction.commit();
     }
-
-
-
-
-
-
 
     private void hideFragment(FragmentTransaction transaction) {
         if (mTab01 != null) {
@@ -203,19 +206,19 @@ public class MainActivity extends FragmentActivity {
             //执行跳转
             switch (view.getId()) {
                 case R.id.btn_nav_channel:
-                    startRevealTransition(0);
+//                    startRevealTransition(0);
                     setSelect(0);
                     return;
                 case R.id.btn_nav_discover:
-                    startRevealTransition(1);
+//                    startRevealTransition(1);
                     setSelect(1);
                     return;
                 case R.id.btn_nav_notice:
-                    startRevealTransition(3);
+//                    startRevealTransition(3);
                     setSelect(2);
                     return;
                 case R.id.btn_nav_baby:
-                    startRevealTransition(4);
+//                    startRevealTransition(4);
                     setSelect(3);
                     return;
                 default:
