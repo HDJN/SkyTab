@@ -1,5 +1,6 @@
 package com.example.sky.myapplication;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import com.doouya.mua.view.ScreenShotable;
 public class AddressFragment extends Fragment implements ScreenShotable {
 
     private Bitmap bitmap;
+    private Bitmap bitmap2;
     private View containerView;
 
     @Override
@@ -22,6 +24,7 @@ public class AddressFragment extends Fragment implements ScreenShotable {
         containerView = rootView.findViewById(R.id.container);
         return rootView;
     }
+
 
     @Override
     public void takeScreenShot() {
@@ -39,6 +42,14 @@ public class AddressFragment extends Fragment implements ScreenShotable {
 
     @Override
     public Bitmap getBitmap() {
-        return bitmap;
+        if(bitmap2 != null){
+            return bitmap2;
+        }else {
+            bitmap2 = Bitmap.createBitmap(containerView.getWidth(),
+                    containerView.getHeight(),Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap2);
+            containerView.draw(canvas);
+            return bitmap2;
+        }
     }
 }

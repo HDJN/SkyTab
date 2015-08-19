@@ -1,5 +1,6 @@
 package com.example.sky.myapplication;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.os.Bundle;
@@ -14,16 +15,18 @@ public class WeixinFragment extends Fragment implements ScreenShotable {
 
 
     private Bitmap bitmap;
+    private Bitmap bitmap2;
     private View containerView;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.tab01, container, false);
         containerView = rootView.findViewById(R.id.container);
         return rootView;
     }
+
+
 
     @Override
     public void takeScreenShot() {
@@ -41,6 +44,14 @@ public class WeixinFragment extends Fragment implements ScreenShotable {
 
     @Override
     public Bitmap getBitmap() {
-        return bitmap;
+        if(bitmap2 != null){
+            return bitmap2;
+        }else {
+            bitmap2 = Bitmap.createBitmap(containerView.getWidth(),
+                    containerView.getHeight(),Bitmap.Config.ARGB_8888);
+            Canvas canvas = new Canvas(bitmap2);
+            containerView.draw(canvas);
+            return bitmap2;
+        }
     }
 }

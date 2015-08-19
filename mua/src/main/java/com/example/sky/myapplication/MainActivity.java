@@ -1,23 +1,29 @@
 package com.example.sky.myapplication;
 
 import android.graphics.Rect;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.AccelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.ViewAnimator;
 
 import com.doouya.mua.view.DrawableButton;
 import com.doouya.mua.view.OnDouClickListener;
+import com.doouya.mua.view.ScreenShotable;
 
 import io.codetail.animation.SupportAnimator;
 import io.codetail.animation.ViewAnimationUtils;
@@ -31,7 +37,13 @@ public class MainActivity extends FragmentActivity {
     private Fragment mTab04;
     private NavBarController mController;
 
-    private FrameLayout mContentView;
+    private LinearLayout mContentView;
+    private LinearLayout mOverlayView;
+
+
+    private Fragment currentFragment;
+
+    private SupportAnimator animator;
 
 
     @Override
@@ -40,7 +52,8 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         mController = new NavBarController((ViewGroup) findViewById(R.id.layout_main_nav), MainActivity.this);
-        mContentView = (FrameLayout)findViewById(R.id.container);
+        mContentView = (LinearLayout)findViewById(R.id.container);
+        mOverlayView = (LinearLayout)findViewById(R.id.content_overlay);
         setSelect(0);
 
     }
@@ -63,14 +76,23 @@ public class MainActivity extends FragmentActivity {
 
     private void setSelect(int i) {
 
-
-
-
-
-
-
-
-
+        if(currentFragment !=null){
+            if(animator!=null && animator.isRunning()){
+                animator.cancel();
+            }
+            final Rect bounds = new Rect();
+            mContentView.getHitRect(bounds);
+            int centerX = (bounds.right / 5) * i + (bounds.right/10);
+            animator = ViewAnimationUtils.createCircularReveal(mContentView,
+                    centerX, bounds.bottom, 0, hypo(bounds.height(), bounds.width()));
+            animator.setInterpolator(new AccelerateInterpolator());
+            animator.setDuration(500);
+            mOverlayView.setBackgroundDrawable(new BitmapDrawable(getResources(), ((ScreenShotable) currentFragment).getBitmap()));
+            Log.d("DDDD", "DDDDD-----" + currentFragment.getClass().getSimpleName());
+//            mOverlayView.getParent().bringChildToFront(mOverlayView);
+//            mOverlayView.setBackgroundColor(getResources().getColor(R.color.hight_yellow));
+            animator.start();
+        }
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         hideFragment(transaction);
@@ -82,6 +104,7 @@ public class MainActivity extends FragmentActivity {
                 } else {
                     transaction.show(mTab01);
                 }
+                currentFragment = mTab01;
                 break;
             case 1:
                 if (mTab02 == null) {
@@ -89,8 +112,8 @@ public class MainActivity extends FragmentActivity {
                     transaction.add(R.id.container, mTab02);
                 } else {
                     transaction.show(mTab02);
-
                 }
+                currentFragment = mTab02;
                 break;
             case 2:
                 if (mTab03 == null) {
@@ -99,6 +122,7 @@ public class MainActivity extends FragmentActivity {
                 } else {
                     transaction.show(mTab03);
                 }
+                currentFragment = mTab03;
                 break;
             case 3:
                 if (mTab04 == null) {
@@ -107,11 +131,13 @@ public class MainActivity extends FragmentActivity {
                 } else {
                     transaction.show(mTab04);
                 }
+                currentFragment = mTab04;
                 break;
             default:
                 break;
         }
         transaction.commit();
+
     }
 
     private void hideFragment(FragmentTransaction transaction) {
